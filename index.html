@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#191622"/>
+    <link rel="apple-touch-icon" href="/512.png">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+  </head>
+  <body class="colors">
+    <div class="grid">
+      <div class="grid-item">
+        <form name="supermarketAppForm" class="ProductForm">
+         <fieldset id="mainFieldset">
+           <h1><img src="LOGO.svg" alt="Minha Figura"></h1>
+           <div id="formContainer">
+             <p>
+               <label for="name">Product </label>
+               <input type="text" id="name" placeholder="Product Name" required />
+             </p>
+             <p>
+               <label for="supermarket">Supermarket </label>
+               <input type="text" id="supermarket" value="" required />
+             </p>
+             <p>
+               <label for="quantity">Quantity </label>
+               <input
+                 type="text"
+                 inputmode="numeric"
+                 pattern="[\d]+"
+                 id="quantity"
+                 required
+               />
+             </p>
+             <p id="isNecessary">
+               <label for="isNecessary">Is it Necessary? </label>
+               <input type="checkbox" id="isNecessary" value="yes" />
+             </p>
+           </div>
+           <div id="buttonDiv" >
+             <button id="btnAdd">Add Product</button>
+             <button id="btnUpdate">Update Product</button>
+             <button id="btnDelete">Delete Product</button>
+             <button id="btnClear">Reset Form</button>
+           </div>
+         </fieldset>
+       </form>
+      </div>
+     <div class="grid-item">
+       <section>
+         <h1 class="listTitle"><img src="LOGO.svg" alt="Minha Figura"></h1>
+         <ul class="wList">
+           <!-- build list here -->
+         </ul>
+       </section>
+      </div>
+    </div>
+
+    </main>
+    <footer>
+      <p>&copy; 2022 Aguinaldo de Souza Júnior.</p>
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

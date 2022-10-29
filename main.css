@@ -1,0 +1,221 @@
+/*theme palette colors*/
+.colors {
+  --color-primary: #191622;
+  --color-secondary: #44475a;
+  --color-tertiary: #41414d;
+  --color-quaternary: #e1e1e6;
+  --color-quinary: #483c67f5;
+  --color-senary: #78d1e1;
+  --color-septenary: #67e480;
+  --color-octonary: #e89e64;
+  --color-nonary: #ff79c6;
+  --color-denary: #988bc7;
+  --color-undenary: #e96379;
+  --color-duodenary: #e7de79;
+}
+
+#mainFieldset {
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-quinary);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  padding: 5px;
+  margin: 5px;
+  width: 97%;
+  display: block;
+  background-color: var(--color-primary);
+}
+
+/*put label above input*/
+label {
+  display: block;
+  margin-bottom: 2px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 1.5rem;
+}
+
+#isNecessary {
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* background image */
+body {
+  background-image: url("g10.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--color-primary);
+  font-family: "Fira Code", sans-serif;
+  color: var(--color-quaternary);
+}
+
+#supermarketAppForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#formContainer {
+  flex-direction: column;
+}
+
+#buttonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-quaternary);
+  font-size: 1.2em;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+img {
+  width: 10.5rem;
+  height: 10.5rem;
+}
+
+button:hover {
+  background-color: var(--color-nonary);
+  border: var(--color-nonary);
+  color: var(--color-primary);
+}
+
+/*change input text design*/
+input[type="text"] {
+  color: var(--color-septenary);
+  font-size: 1.2rem;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+section {
+  display: block;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-quinary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
+}
+
+section ul {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+section ul li {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: large;
+  margin: 10px;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section ul :hover {
+  background-color: var(--color-nonary);
+  color: var(--color-primary);
+  border: var(--color-nonary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2.5rem;
+  color: var(--color-nonary);
+}
+
+/*remove grid for mobile*/
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+}
