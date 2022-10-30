@@ -219,3 +219,37 @@ h1 {
     display: block;
   }
 }
+
+/*create responsible design for mobile*/
+@media only screen and (max-width: 600px) {
+  #mainFieldset {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  section ul li {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+  #isNecessary {
+    width: 100%;
+  }
+  button {
+    width: 86%;
+  }
+  h1 {
+    width: 100%;
+  }
+  h3 {
+    width: 100%;
+  }
+  p {
+    width: 100%;
+  }
+  input {
+    width: 86%;
+  }
+}
